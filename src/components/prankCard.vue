@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <v-card class="mx-auto" max-width="344" min-height="500">
+    <v-card class="mx-auto" max-width="344" min-height="580">
       <v-img :src="CardData.img_url" height="16rem"></v-img>
 
       <v-card-title>
@@ -35,7 +35,7 @@
 
 </div>
 
-      <v-card-actions class="d-flex justify-center align-center">
+      <v-card-actions class="d-flex pt-12 justify-center align-center">
         <v-btn color="secondary my-4" > Send This Prank </v-btn>
       </v-card-actions>
     </v-card>

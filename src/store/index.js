@@ -22,6 +22,7 @@ export default new Vuex.Store({
         .get('https://t0u4i52ro7.execute-api.us-east-1.amazonaws.com/api/v1/category?limit=10&page=1')
         .then(response => {
           let Categories = response.data.data.splice(0, 3)
+          console.log(response.data);
           commit('SET_Categories', Categories)
         })
         .catch(err => {
@@ -33,6 +34,8 @@ export default new Vuex.Store({
         .get('https://t0u4i52ro7.execute-api.us-east-1.amazonaws.com/api/v1/prank-idea?limit=10&page=1')
         .then(response => {
           let ideasData = response.data.data
+          console.log(response.data);
+
           commit('SET_IDEAS', ideasData)
         })
         .catch(err => {

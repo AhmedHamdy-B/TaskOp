@@ -36,7 +36,7 @@
 </div>
 
       <v-card-actions class="d-flex pt-12 justify-center align-center">
-        <v-btn color="secondary my-4" > Send This Prank </v-btn>
+        <v-btn color="secondary" > Send This Prank </v-btn>
       </v-card-actions>
     </v-card>
   </div>
@@ -52,6 +52,9 @@ export default {
 </script>
 <style scoped lang="scss">
 
+.secondary{
+  background-color: #ffa500!important;
+}
 .like-text{
   color: #395886;
 }

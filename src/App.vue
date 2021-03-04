@@ -1,55 +1,32 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="white"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink m-2"
-          contain
-          src="./assets/logo.png"
-          transition="scale-transition"
-          width="200"
-        />
-
-
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://www.ownagepranks.com/"
-        target="_blank"
-        text
-        color="secondary"
-      >
-        <span class="mr-2">Visit Our Website</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-       <home />
-    </v-main>
+  <v-app id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/top">Top Performing</router-link>
+    </div>
+    <router-view/>
   </v-app>
 </template>
 
-<script>
-import home from './views/Home';
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-export default {
-  name: 'App',
+#nav {
+  padding: 30px;
 
-  components: {
-    home,
-  },
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-  data: () => ({
-    pranks:[]
-  }),
-
-};
-</script>
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>

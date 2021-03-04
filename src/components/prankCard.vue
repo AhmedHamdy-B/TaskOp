@@ -8,7 +8,8 @@
       </v-card-title>
 
       <v-card-subtitle>
-        {{ CardData.description.substring(0,30) }}...
+        {{ CardData.description | truncate(60) }}
+        <!-- {{ .substring(0,30) }}... -->
       </v-card-subtitle>
 
 <div>

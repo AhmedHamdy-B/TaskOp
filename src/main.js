@@ -6,6 +6,7 @@ import store from './store'
 import axios from 'axios'
 import vuetify from './plugins/vuetify';
 import Meta from "vue-meta";
+import "./filters"
 Vue.use(axios)
 Vue.use(Meta)
 Vue.config.productionTip = false

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import * as top from './modules/top'
+import top from './modules/top'
 Vue.use(Vuex, axios)
 
 export default new Vuex.Store({
@@ -48,3 +48,8 @@ export default new Vuex.Store({
     top
   }
 })
+
+
+
+
+

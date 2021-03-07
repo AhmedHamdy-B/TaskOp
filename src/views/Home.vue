@@ -75,6 +75,7 @@ export default {
   mounted() {
     this.$store.dispatch("loadPranks");
     this.$store.dispatch("loadIdeas");
+    
   },
   methods: {
     LoadCategoryPranks(prankCat) {
